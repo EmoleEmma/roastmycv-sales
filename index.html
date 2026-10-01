@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RoastMyCV — Honest AI feedback on your CV</title>
+<meta name="description" content="Upload your CV as a PDF. Get an honest score, specific feedback and a full rewrite built for Nigerian and international tech roles.">
+<style>
+:root{--desk:#e9e7e2;--paper:#fffefb;--ink:#171a26;--mute:#555b6e;--pen:#d4231a;--mark:#ffe14d;--line:#dcd9d1}
+*{box-sizing:border-box;margin:0}
+body{background:var(--desk);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sheet{max-width:760px;margin:24px auto;background:var(--paper);border:1px solid var(--line);padding:0 clamp(20px,5vw,56px);box-shadow:0 1px 0 var(--line)}
+header{padding:22px 0;border-bottom:2px solid var(--ink);font-weight:800;font-size:20px;letter-spacing:-.02em}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h1{font:800 clamp(40px,9vw,68px)/1.02 Georgia,"Times New Roman",serif;letter-spacing:-.03em;margin:44px 0 18px}
+h2{font:700 clamp(26px,5vw,34px)/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.02em;margin-bottom:16px}
+p{color:var(--mute)}
+.lead{font-size:19px;max-width:30em;color:var(--ink)}
+.cv{margin:30px 0 10px;border:1px solid var(--line);background:#fff;padding:20px 22px;font-family:Georgia,serif}
+.cv .name{font-weight:700;color:var(--ink);border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:6px}
+.ln{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 18px;padding:7px 0;color:var(--ink)}
+.ln s{text-decoration-color:var(--pen);text-decoration-thickness:2px}
+.ln u{text-decoration:none;border:2px solid var(--pen);border-radius:40%/60%;padding:0 8px}
+.ln i{font:italic 17px "Segoe Print","Bradley Hand","Comic Sans MS",cursive;color:var(--pen);transform:rotate(-2deg)}
+.grades{display:flex;flex-wrap:wrap;gap:8px 22px;margin:14px 0 4px}
+.grades span{font-size:14px;color:var(--mute)}
+.grades b{font:700 26px "Segoe Print","Bradley Hand","Comic Sans MS",cursive;color:var(--pen);margin-right:6px}
+.cap{font-size:13px}
+.price{font:800 34px Georgia,serif;color:var(--ink);margin:30px 0 8px}
+.price span{font:600 14px system-ui,sans-serif;color:var(--mute);margin-left:6px}
+.btn{margin:6px 0}
+.btn img{display:block;max-width:100%;height:auto}
+ol{list-style:none;counter-reset:s;padding:0}
+ol li{counter-increment:s;padding:0 0 18px 48px;position:relative;color:var(--mute)}
+ol li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border:2px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-weight:800;color:var(--ink)}
+ol b,.l b{color:var(--ink)}
+ul{list-style:none;padding:0}
+ul li{padding:6px 0 6px 26px;position:relative;color:var(--mute)}
+ul li::before{content:"";position:absolute;left:0;top:15px;width:14px;height:3px;background:var(--pen)}
+mark{background:var(--mark);color:var(--ink);padding:0 3px}
+.two{display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.two h3{font-size:17px;margin-bottom:6px}
+details{border-bottom:1px solid var(--line);padding:15px 0}
+summary{cursor:pointer;font-weight:700}
+details p{margin-top:8px;font-size:16px}
+footer{padding:22px 0 30px;font-size:13px;color:var(--mute);border-top:2px solid var(--ink)}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<header>RoastMyCV</header>
+
+<section>
+  <h1>Your CV is why they ghosted you.</h1>
+  <p class="lead">Upload your PDF. Get an honest score, specific feedback on what recruiters skip, and a full rewrite built for Nigerian and international tech roles.</p>
+
+  <div class="cv" aria-label="Sample marked-up CV">
+    <p class="name">AMAKA O. · Software Developer</p>
+    <p class="ln"><s>Passionate developer seeking opportunities</s><i>says nothing about you</i></p>
+    <p class="ln"><span>Built a website for a client</span><i>how many users? what changed?</i></p>
+    <p class="ln"><span>Skills: <u>Microsoft Office</u>, HTML, CSS</span><i>this is a tech CV</i></p>
+    <div class="grades"><span><b>4</b>Clarity</span><span><b>3</b>ATS</span><span><b>6</b>Skills</span><span><b>3</b>Impact</span><span><b>4</b>Overall</span></div>
+  </div>
+  <p class="cap">Sample markup, not a real person's CV. Yours gets its own notes.</p>
+
+  <p class="price">PRICE<span>one-time payment</span></p>
+  <div class="btn"><img src="https://cdn.stakecut.com/buttons/button1.png" alt="PRODUCT_ID" id="stakecut-button" width="300" height="auto"></div>
+  <p class="cap">After payment you get a link straight to the app.</p>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <ol>
+    <li><b>Upload your CV.</b> Drop in a PDF, up to 5MB.</li>
+    <li><b>Get the roast.</b> An AI model (LLaMA 3.3 70B) scores clarity, ATS, skills, impact and overall, then lists what is weak.</li>
+    <li><b>Get the rewrite.</b> One click produces a rewritten CV aimed at ATS systems and tech hiring in Nigeria and abroad.</li>
+  </ol>
+  <p>The whole thing takes <mark>under a minute</mark>.</p>
+</section>
+
+<section>
+  <h2>What the review gives you</h2>
+  <ul class="l">
+    <li><b>Five scores</b> so you can see which part of your CV is dragging you down.</li>
+    <li><b>Blunt, specific notes</b> on the exact lines that cost you interviews, not generic advice.</li>
+    <li><b>A full rewrite</b> you can read, edit and send.</li>
+    <li><b>A tech focus.</b> Feedback is written for software and technology roles, with the Nigerian market in mind.</li>
+  </ul>
+  <div class="btn" style="margin-top:22px"><img src="https://cdn.stakecut.com/buttons/button1.png" alt="PRODUCT_ID" width="260" height="auto"></div>
+</section>
+
+<section>
+  <div class="two">
+    <div>
+      <h3>Built for</h3>
+      <ul><li>Students and recent graduates</li><li>Internship applicants</li><li>Entry-level developers and tech professionals</li></ul>
+    </div>
+    <div>
+      <h3>Not for</h3>
+      <ul><li>Anyone expecting a guaranteed job</li><li>CVs for non-tech fields</li><li>People who want a cheerleader instead of honest notes</li></ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Questions</h2>
+  <details><summary>What file do I need?</summary><p>A PDF, up to 5MB.</p></details>
+  <details><summary>How long does it take?</summary><p>Under a minute from upload to roast.</p></details>
+  <details><summary>Will this get me a job?</summary><p>No tool can promise that. It shows you what is weak and gives you a stronger draft. You still apply, and you still check every line is true for you.</p></details>
+  <details><summary>Is the rewritten CV ready to send?</summary><p>Treat it as a strong first draft. Read it through and fix anything that does not match your real experience.</p></details>
+</section>
+
+<section>
+  <h2>Find out what is wrong before the next recruiter does.</h2>
+  <div class="btn"><img src="https://cdn.stakecut.com/buttons/button1.png" alt="PRODUCT_ID" width="300" height="auto"></div>
+</section>
+
+<footer>RoastMyCV by Beyond Horizon</footer>
+</div>
+
+<script src="https://cdn.stakecut.com/pixel/pixel.min.js"></script>
+</body>
+</html>
